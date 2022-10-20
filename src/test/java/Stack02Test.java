@@ -31,6 +31,22 @@ class Stack02Test {
 
         assertEquals(20, st.pop());
         assertEquals(10, st.pop());
+        //st.pop() 비어있을때 실행하면 Index가 -1 까지 내려가서 오류 발생
 
+    }
+
+    //isEmptyTest
+//    1.비었을때 True
+//    2.값이 들어 있을 때 False
+//    3.값을 뺐을 때 True
+
+    @Test
+    void isEmpty(){
+        Stack02 st = new Stack02();
+        assertTrue(st.isEmpty());
+        st.push(10);
+        assertFalse(st.isEmpty());
+        st.pop();
+        assertTrue(st.isEmpty());
     }
 }
