@@ -7,7 +7,7 @@ public class sosu {
 
     public boolean isPrime(int num){
         boolean prime = true;
-        for (int i = 1; i < num; i++) {
+        for (int i = 2; i < num; i++) {
             if(num%i==0){
                 prime = false;
                 return prime;
@@ -21,6 +21,8 @@ public class sosu {
     }
 
     public static void main(String[] args) {
+        sosu s = new sosu();
+        System.out.println(s.isPrime(13));
 
     }
 
