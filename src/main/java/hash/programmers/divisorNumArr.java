@@ -1,6 +1,7 @@
 package hash.programmers;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class divisorNumArr {
     //조건 %해서 0이면 list.add()
@@ -9,7 +10,7 @@ public class divisorNumArr {
 
         public int[] solution(int[] arr, int divisor) {
             int[] answer = {};
-            ArrayList<Integer> arrNum = new ArrayList<Integer>();
+            List<Integer> arrNum = new ArrayList<Integer>();
             for (int i = 0; i < arr.length; i++) {
                 if(arr[i] % divisor == 0){
                     arrNum.add(arr[i]);
